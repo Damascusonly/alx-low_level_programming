@@ -7,6 +7,14 @@
 
 int main(void)
 {
+	if (sizeof(void *) == 8)
+	{
+		printf("This is a 64-bit machine.\n");
+	}
+	else
+	{
+		printf("This is a 32-bit machine.\n");
+	}
 	printf("The size of int is %zu bytes.\n", sizeof(int));
 	printf("The size of short is %zu bytes.\n", sizeof(short));
 	printf("The size of long is %zu bytes.\n", sizeof(long));
